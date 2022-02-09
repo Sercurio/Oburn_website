@@ -1,0 +1,47 @@
+---
+// Component Imports
+import Nav from "../components/Nav.astro";
+// You can import components from any supported Framework here!
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = "O'Burn";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+
+
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+
+ <link
+    rel="stylesheet"
+    href={Astro.resolve("../styles/global.css")}>
+    <style global>
+			@import "../styles/global.css";
+	</style>
+  </head>
+  <body class="bg-slate-800">
+    <main>
+      <header>
+      <Nav />
+        <div class="flex flex-col items-center">
+          <h1 class="text-gray-200">O'Burn</h1>
+          <img
+            width="auto"
+            height="auto"
+            src="/assets/banniere.jpg"
+            alt="banniere"
+          />
+        </div>
+      </header>
+    </main>
+  </body>
+</html>

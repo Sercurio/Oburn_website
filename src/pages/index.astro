@@ -11,8 +11,6 @@ let title = "O'Burn";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
-
-
 ---
 
 <html lang="fr">
@@ -21,66 +19,61 @@ let title = "O'Burn";
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
 
- <link
-    rel="stylesheet"
-    href={Astro.resolve("../styles/global.css")}>
+    <link rel="stylesheet" href={Astro.resolve("../styles/global.css")} />
     <style global>
-			@import "../styles/global.css";
-	</style>
+      @import "../styles/global.css";
+    </style>
   </head>
   <body class="bg-slate-800">
     <main>
       <header>
-      <Nav />
+        <Nav />
         <div class="flex flex-col items-center">
           <img
-           class="object-contain h-48 w-96"
+            class="object-contain h-48 w-96"
             src="/assets/banniere.jpg"
             alt="banniere"
           />
-       
         </div>
       </header>
-         <div class="relative flex py-5 items-center">
+      <div class="relative flex py-5 items-center">
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-row justify-around">
+          <img
+            class="object-contain h-48 w-96"
+            src="/assets/pochette.jpg"
+            alt="pochette"
+          />
+          <div class="flex flex-col justify-evenly">
+            <p class="text-white">BURN-OUT</p>
+            <p class="text-white">EP</p>
+            <button class="bg-green-700 text-gray-100 ">Commander</button>
+          </div>
+        </div>
+        <div class="relative flex py-5 items-center">
           <div class="flex-grow border-t border-gray-400"></div>
         </div>
-        <div class="flex flex-col">
-          <div class="flex flex-row justify-around">
-            <img
-            class="object-contain h-48 w-96"
-              src="/assets/pochette.jpg"
-              alt="pochette"
-            />
-            <div class="flex flex-col justify-evenly">
-              <p class="text-white">BURN-OUT</p>
-              <p class="text-white">EP</p>
-              <button class="bg-green-700 text-gray-100 ">Commander</button>
-            </div>
-          </div>
-          <div class="relative flex py-5 items-center">
-            <div class="flex-grow border-t border-gray-400"></div>
-          </div>
 
         <div class="flex flex-row justify-around">
           <img
             class="object-contain h-48 w-96"
-              src="/assets/axel_chante.jpg"
-              alt="axel_chante"
-            />
-            <img
+            src="/assets/axel_chante.jpg"
+            alt="axel_chante"
+          />
+          <img
             class="object-contain h-48 w-96"
-              src="/assets/axel_chante.jpg"
-              alt="axel_chante"
-            />
-            <img
+            src="/assets/axel_chante.jpg"
+            alt="axel_chante"
+          />
+          <img
             class="object-contain h-48 w-96"
-              src="/assets/axel_chante.jpg"
-              alt="axel_chante"
-            />
+            src="/assets/axel_chante.jpg"
+            alt="axel_chante"
+          />
         </div>
-
-
-        </div>
+      </div>
     </main>
   </body>
 </html>

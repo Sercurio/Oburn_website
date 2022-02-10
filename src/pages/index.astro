@@ -1,6 +1,7 @@
 ---
 // Component Imports
-import Nav from "../components/Nav.astro";
+import Navbar from "../components/Navbar.astro";
+import Separator from "../components/Separator.astro";
 // You can import components from any supported Framework here!
 
 // Component Script:
@@ -27,52 +28,44 @@ let title = "O'Burn";
   <body class="bg-slate-800">
     <main>
       <header>
-        <Nav />
-        <div class="flex flex-col items-center">
-          <img
-            class="object-contain h-48 w-96"
-            src="/assets/banniere.jpg"
-            alt="banniere"
-          />
-        </div>
+        <Navbar />
       </header>
-      <div class="relative flex py-5 items-center">
-        <div class="flex-grow border-t border-gray-400"></div>
-      </div>
-      <div class="flex flex-col">
-        <div class="flex flex-row justify-around">
-          <img
-            class="object-contain h-48 w-96"
-            src="/assets/pochette.jpg"
-            alt="pochette"
-          />
-          <div class="flex flex-col justify-evenly">
-            <p class="text-white">BURN-OUT</p>
-            <p class="text-white">EP</p>
-            <button class="bg-green-700 text-gray-100 ">Commander</button>
-          </div>
-        </div>
-        <div class="relative flex py-5 items-center">
-          <div class="flex-grow border-t border-gray-400"></div>
-        </div>
 
-        <div class="flex flex-row justify-around">
-          <img
-            class="object-contain h-48 w-96"
-            src="/assets/axel_chante.jpg"
-            alt="axel_chante"
-          />
-          <img
-            class="object-contain h-48 w-96"
-            src="/assets/axel_chante.jpg"
-            alt="axel_chante"
-          />
-          <img
-            class="object-contain h-48 w-96"
-            src="/assets/axel_chante.jpg"
-            alt="axel_chante"
-          />
-        </div>
+      <div class="flex flex-col items-center">
+        <img
+          class="object-contain h-56 my-5"
+          src="/assets/pochette.jpg"
+          alt="pochette"
+        />
+          <p class="text-white mb-5">BURN-OUT EP</p>
+        <button class="bg-green-700  p-1 text-gray-100 mb-5">Commander</button>
+      </div>
+      <Separator />
+      <div class="flex flex-col items-center my-5">
+        <img
+          class="object-contain h-72"
+          src="/assets/banniere.jpg"
+          alt="banniere"
+        />
+      </div>
+      <Separator />
+
+      <div class="md:flex justify-around my-5">
+        <img
+          class="object-contain h-48 w-96"
+          src="/assets/axel_chante.jpg"
+          alt="axel_chante"
+        />
+        <img
+          class="object-contain h-48 w-96"
+          src="/assets/axel_chante.jpg"
+          alt="axel_chante"
+        />
+        <img
+          class="object-contain h-48 w-96"
+          src="/assets/axel_chante.jpg"
+          alt="axel_chante"
+        />
       </div>
     </main>
   </body>

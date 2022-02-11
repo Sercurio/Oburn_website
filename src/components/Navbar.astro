@@ -10,7 +10,7 @@
   <div class="logo">O'BURN</div>
   <input type="checkbox" id="click" />
   <label for="click" class="menu-btn">
-    <i class="fas fa-bars"></i>
+    <i class="fa-solid fa-bars"></i>
   </label>
   <ul>
     <li><a class="active" href="#">Accueil</a></li>
@@ -24,7 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   nav {
     display: flex;
@@ -70,7 +70,7 @@
     cursor: pointer;
     display: none;
   }
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     display: none;
   }
   @media (max-width: 1000px) {
@@ -83,7 +83,7 @@
       display: block;
     }
     #click:checked ~ .menu-btn i:before {
-      content: "\f00d";
+      content: '\f00d';
     }
     nav ul {
       position: fixed;

@@ -1,4 +1,5 @@
 ---
+const fontPath = Astro.resolve("../../public/assets/CAESAR.woff");
 ---
 
 <script
@@ -7,7 +8,7 @@
   crossorigin="anonymous"></script>
 
 <nav>
-  <div class="logo">O'BURN</div>
+  <div class="logo" style="font-family: caesarFont;">O'BURN</div>
   <input type="checkbox" id="click" />
   <label for="click" class="menu-btn">
     <i class="fa-solid fa-bars"></i>
@@ -20,11 +21,22 @@
 </nav>
 
 <style>
+  @font-face {
+    font-family: caesarFont;
+    src: fontPath;
+  }
+
+  .text {
+    width: 33.3%;
+    float: left;
+    font-family: myFont;
+  }
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   nav {
     display: flex;
@@ -70,7 +82,7 @@
     cursor: pointer;
     display: none;
   }
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     display: none;
   }
   @media (max-width: 1000px) {
@@ -83,7 +95,7 @@
       display: block;
     }
     #click:checked ~ .menu-btn i:before {
-      content: '\f00d';
+      content: "\f00d";
     }
     nav ul {
       position: fixed;

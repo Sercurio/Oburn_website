@@ -6,6 +6,4 @@ const { title = "O'BURN" } = Astro.props;
 <meta name="viewport" content="width=device-width" />
 <title>{title}</title>
 
-<style global>
-  @import "../styles/global.css";
-</style>
+<link global rel="stylesheet" href={Astro.resolve("../styles/global.css")} >

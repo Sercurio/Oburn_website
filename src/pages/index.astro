@@ -5,9 +5,11 @@ import SnipcartHead from "../components/SnipcartHead.astro";
 import Navbar from "../components/Navbar.astro";
 import Separator from "../components/Separator.astro";
 import Banniere from "../components/Banniere.astro";
+import Caroussel from "../components/Caroussel.astro";
 import CarousselPhotos from "../components/CarousselPhotos.astro";
 import AlbumOrder from "../components/AlbumOrder.astro";
 ---
+
 <html lang="fr">
   <head>
     <SiteHead />
@@ -19,8 +21,8 @@ import AlbumOrder from "../components/AlbumOrder.astro";
     <AlbumOrder />
 
     <Separator />
-<div style="display:flex; flex-direction: column; align-items: center;"><iframe class="container" style="align-self:center;height=100%;width=100%;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Hn5bNBXJKxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     
+    <Caroussel client:visible/>
     <!-- <Banniere /> -->
 
     <Separator />

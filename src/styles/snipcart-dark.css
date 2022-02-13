@@ -103,7 +103,7 @@
   --bgColor-info: hsl(210, 55%, 15%);
 
   --bgColor-modal: hsl(210, 10%, 7%);
-  --bgColor-modalVeil: hsla(210, 10%, 7%, .75);
+  --bgColor-modalVeil: hsla(210, 10%, 7%, 0.75);
 
   --bgColor-link: none;
   --bgColor-link-hover: none;
@@ -150,24 +150,24 @@
       Shadows
   ----------------- */
 
-  --shadow-default: 0px 20px 24px -20px hsla(0, 0%, 0%, .5);
-  --shadow-tooltip: 0px 8px 16px hsla(220, 70%, 22%, .5);
+  --shadow-default: 0px 20px 24px -20px hsla(0, 0%, 0%, 0.5);
+  --shadow-tooltip: 0px 8px 16px hsla(220, 70%, 22%, 0.5);
 
-  --shadow-link-focus: 0px 6px 4px -3px hsla(200, 90%, 40%, .5);
+  --shadow-link-focus: 0px 6px 4px -3px hsla(200, 90%, 40%, 0.5);
 
   --shadow-input-hover: none;
-  --shadow-input-focus: 0px 5px 10px -3px hsla(200, 90%, 40%, .3);
+  --shadow-input-focus: 0px 5px 10px -3px hsla(200, 90%, 40%, 0.3);
   --shadow-input-checked: none;
 
-  --shadow-buttonPrimary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, .5);
+  --shadow-buttonPrimary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, 0.5);
   --shadow-buttonPrimary-active: none;
   --shadow-buttonPrimary-focus: 0px 0px 6px 2px hsl(200, 90%, 40%);
 
-  --shadow-buttonSecondary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, .2);
+  --shadow-buttonSecondary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, 0.2);
   --shadow-buttonSecondary-active: none;
-  --shadow-buttonSecondary-focus: 0px 0px 6px 2px hsla(200, 90%, 40%, .8);
+  --shadow-buttonSecondary-focus: 0px 0px 6px 2px hsla(200, 90%, 40%, 0.8);
 
-  --shadow-buttonDanger-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, .25);
+  --shadow-buttonDanger-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, 0.25);
   --shadow-buttonDanger-active: none;
   --shadow-buttonDanger-focus: 0px 0px 6px 2px hsla(6, 55%, 60%);
 }

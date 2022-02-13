@@ -1,5 +1,4 @@
 ---
-const fontPath = Astro.resolve("../../public/assets/CAESAR.woff");
 ---
 
 <script
@@ -8,7 +7,7 @@ const fontPath = Astro.resolve("../../public/assets/CAESAR.woff");
   crossorigin="anonymous"></script>
 
 <nav>
-  <div class="logo" style="font-family: caesarFont;">O'BURN</div>
+  <div  class="logo" style="font-family: caesarFont !important;">O'BURN</div>
   <input type="checkbox" id="click" />
   <label for="click" class="menu-btn">
     <i class="fa-solid fa-bars"></i>
@@ -23,7 +22,7 @@ const fontPath = Astro.resolve("../../public/assets/CAESAR.woff");
 <style>
   @font-face {
     font-family: caesarFont;
-    src: fontPath;
+    src: url("../../public/assets/CAESAR.TTF");
   }
 
   .text {
@@ -52,6 +51,7 @@ const fontPath = Astro.resolve("../../public/assets/CAESAR.woff");
     color: #fff;
     font-size: 42px;
     font-weight: 600;
+    
   }
   nav ul {
     display: flex;

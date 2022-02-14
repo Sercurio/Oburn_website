@@ -26,21 +26,22 @@
       <iframe
         width="1024"
         height="500"
-        src="https://www.youtube-nocookie.com/embed/Hn5bNBXJKxA?modestbranding=1"
+        src="https://www.youtube-nocookie.com/embed/Hn5bNBXJKxA"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
-
     <label
       for="carousel-3"
-      class="w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center content-center"
-    ></label>
+      class="control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center content-center"
+      ><i class="fas fa-angle-left mt-3"></i></label
+    >
     <label
       for="carousel-2"
       class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
-    ></label>
+      ><i class="fas fa-angle-right mt-3"></i></label
+    >
 
     <!--Slide 2-->
     <input
@@ -58,7 +59,7 @@
       <iframe
         width="1024"
         height="500"
-        src="https://www.youtube-nocookie.com/embed/aFmCrviFaiY?modestbranding=1"
+        src="https://www.youtube-nocookie.com/embed/aFmCrviFaiY"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -91,7 +92,7 @@
       <iframe
         width="1024"
         height="500"
-        src="https://www.youtube-nocookie.com/embed/DCGaUe4Cr_I?modestbranding=1"
+        src="https://www.youtube-nocookie.com/embed/DCGaUe4Cr_I"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -149,14 +150,14 @@
   #carousel-1:checked ~ .control-1,
   #carousel-2:checked ~ .control-2,
   #carousel-3:checked ~ .control-3 {
-    display: block;
+    display: "";
   }
 
   .carousel-indicators {
     list-style: none;
     margin: 0;
     padding: 0;
-    /* position: absolute; */
+    position: absolute;
     bottom: 2%;
     left: 0;
     right: 0;

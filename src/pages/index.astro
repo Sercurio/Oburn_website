@@ -11,25 +11,39 @@ import AlbumOrder from '../components/AlbumOrder.astro'
 import IconBar from '../components/IconBar.astro'
 ---
 
-<html lang="fr">
+<html class="h-full bg-slate-700" lang="fr">
   <head>
     <SiteHead />
     <SnipcartHead />
   </head>
-  <body class="bg-gradient-to-r from-green-400 to-blue-500">
-    <Navbar />
+  <body class="h-full">
+    <div
+      id="order"
+      class="flex flex-col h-screen bg-gradient-to-bl from-slate-900 to-blue-900"
+    >
+      <Navbar class="flex-grow" />
 
-    <AlbumOrder />
+      <AlbumOrder class="flex-grow" />
+    </div>
 
     <Separator />
 
-    <Caroussel client:visible />
-    <!-- <Banniere /> -->
+    <div
+      id="carousel"
+      class="flex flex-col h-screen bg-gradient-to-br from-red-900 to-yellow-900"
+    >
+      <Caroussel class="flex-grow" client:visible />
+      <!-- <Banniere /> -->
+    </div>
 
     <Separator />
 
-    <CarousselPhotos />
-
+    <div
+      id="photos"
+      class="flex flex-col h-screen bg-gradient-to-tl from-green-900 to-blue-900"
+    >
+      <CarousselPhotos class="flex-grow pt-2" />
+    </div>
     <IconBar />
   </body>
 </html>

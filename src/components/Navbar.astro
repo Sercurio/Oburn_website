@@ -1,5 +1,5 @@
 ---
-  //const fontPath = Astro.resolve("../../public/assets/CAESAR.woff")
+//const fontPath = Astro.resolve("../../public/assets/CAESAR.woff")
 ---
 
 <script
@@ -14,13 +14,13 @@
     <i class="fa-solid fa-bars"></i>
   </label>
   <ul>
-    <li><a class="active" href="#">Accueil</a></li>
-    <li><a href="#">Galerie</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#order">Accueil</a></li>
+    <li><a href="#carousel">Galerie</a></li>
+    <li><a href="#photos">Contact</a></li>
   </ul>
-</nav> 
+</nav>
 
-<style> 
+<style>
   .text {
     width: 33.3%;
     float: left;
@@ -31,7 +31,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   nav {
     display: flex;
@@ -76,7 +76,7 @@
     cursor: pointer;
     display: none;
   }
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     display: none;
   }
   @media (max-width: 1000px) {
@@ -89,7 +89,7 @@
       display: block;
     }
     #click:checked ~ .menu-btn i:before {
-      content: "\f00d";
+      content: '\f00d';
     }
     nav ul {
       position: fixed;

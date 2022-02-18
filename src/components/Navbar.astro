@@ -1,11 +1,18 @@
 ---
-//const fontPath = Astro.resolve("../../public/assets/CAESAR.woff")
 ---
+
+<script hoist>
+  let goTo = (anchor) => {
+    document.getElementById(anchor).scrollIntoView()
+  }
+</script>
 
 <script
   client:load
   src="https://kit.fontawesome.com/51d20cf8ff.js"
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"
+>
+</script>
 
 <nav>
   <div id="logo" class="logo" style="font-family: caesarFont;">O'BURN</div>
@@ -15,19 +22,15 @@
   </label>
   <ul>
     <li>
-      <a id="order" href="#order"
-        ><label for="click" class="menu-btn">Accueil</label></a
+      <label for="click" class="cursor-pointer menu-btn">Accueil</label>
+    </li>
+    <li>
+      <label client:only for="click" class="cursor-pointer menu-btn"
+        >Galerie</label
       >
     </li>
     <li>
-      <a id="carousel" href="#carousel"
-        ><label for="click" class="menu-btn">Galerie</label></a
-      >
-    </li>
-    <li>
-      <a id="photos" href="#photos"
-        ><label for="click" class="menu-btn">Contact</label></a
-      >
+      <label for="click" class="cursor-pointer menu-btn">Contact</label>
     </li>
   </ul>
 </nav>
@@ -67,7 +70,7 @@
   nav ul li {
     margin: 0 5px;
   }
-  nav ul li a {
+  nav ul li label {
     color: #f2f2f2;
     text-decoration: none;
     font-size: 21px;
@@ -77,8 +80,8 @@
     letter-spacing: 1px;
     transition: all 0.3s ease;
   }
-  nav ul li a.active,
-  nav ul li a:hover {
+  nav ul li label.active,
+  nav ul li label:hover {
     color: #111;
     background: #fff;
   }
@@ -121,18 +124,18 @@
       width: 100%;
       margin: 40px 0;
     }
-    nav ul li a {
+    nav ul li label {
       width: 100%;
       margin-left: -100%;
       display: block;
       font-size: 24px;
       transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-    #click:checked ~ ul li a {
+    #click:checked ~ ul li label {
       margin-left: 0px;
     }
-    nav ul li a.active,
-    nav ul li a:hover {
+    nav ul li label.active,
+    nav ul li label:hover {
       background: none;
       color: cyan;
     }

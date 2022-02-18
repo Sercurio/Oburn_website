@@ -22,15 +22,23 @@
   </label>
   <ul>
     <li>
-      <label for="click" class="cursor-pointer menu-btn">Accueil</label>
-    </li>
-    <li>
-      <label client:only for="click" class="cursor-pointer menu-btn"
-        >Galerie</label
+      <label for="click" class="cursor-pointer menu-btn" onclick="goTo('order')"
+        >Accueil</label
       >
     </li>
     <li>
-      <label for="click" class="cursor-pointer menu-btn">Contact</label>
+      <label
+        for="click"
+        class="cursor-pointer menu-btn"
+        onclick="goTo('carousel')">Galerie</label
+      >
+    </li>
+    <li>
+      <label
+        for="click"
+        class="cursor-pointer menu-btn"
+        onclick="goTo('photos')">Contact</label
+      >
     </li>
   </ul>
 </nav>
